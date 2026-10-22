@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #9f3c16;
+    --color-primary-container: #bf542c;
+    --color-primary-fixed: #ffdbcf;
+    --color-tertiary: #8b4c00;
+    --color-tertiary-container: #af6102;
+    --color-tertiary-fixed: #ffdcc2;
+    --color-secondary: #4f5e80;
+    --color-outline: #8a726a;
+    --color-outline-variant: #dec0b7;
+  }
+
+  body {
+    background-color: #141312;
+    color: #f5f1eb;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, .font-serif, .font-headline {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1d1b1a;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #38332f;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #bf542c;
+}
+
+.craft-ring {
+  background: linear-gradient(135deg, #bf542c 0%, #af6102 50%, #ffdcc2 100%);
+}
